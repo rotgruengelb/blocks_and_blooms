@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "blocks_blooms",
+	"version": "${version}",
+	"name": "Blocks and Blooms",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Rotgruengelb"
+	],
+	"contact": {
+		"homepage": "https://rotgruengelb.net/mods",
+		"sources": "https://github.com/rotgruengelb/blocks_and_blooms"
+	},
+	"license": "MIT",
+	"icon": "assets/blocks_blooms/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.rotgruengelb.blocks_blooms.Blocks_Blooms"
+		],
+		"client": [
+			"net.rotgruengelb.blocks_blooms.Blocks_BloomsClient"
+		],
+		"fabric-datagen": [
+			"net.rotgruengelb.blocks_blooms.Blocks_BloomsModDataGenerator"
+		]
+	},
+	"mixins": [
+		"blocks_blooms.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

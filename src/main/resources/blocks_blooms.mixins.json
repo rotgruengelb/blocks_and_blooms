@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.rotgruengelb.blocks_blooms.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+      "Blocks_BloomsMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
